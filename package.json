@@ -1,5 +1,15 @@
 {
   "dependencies": {
     "firebase": "^10.12.2"
-  }
+  },
+  "name": "test_site",
+  "description": "Creating a website using Firebase and Petite-Vue.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
