@@ -5,10 +5,13 @@
   "name": "test_site",
   "description": "Creating a website using Firebase and Petite-Vue.",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "app.js",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development"
   },
   "author": "",
   "license": "ISC"
