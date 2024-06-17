@@ -21,4 +21,23 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-console.log("hello")
+console.log("hello");
+
+fetch("data/sample_data.json")
+.then(function(res){
+    return res.json();
+})
+.then(function(products){
+    let placeholder = document.querySelector("#table-body-0");
+    let out = "";
+    for(let product of products){
+        out += `
+            <tr>
+                <td>${product.rank}</td>
+                <td>${product.name}</td>
+                <td>${product.rating}</td>
+            </tr>
+        `;
+    }
+    placeholder.innerHTML = out;
+})
