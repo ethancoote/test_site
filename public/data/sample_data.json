@@ -12,6 +12,21 @@
     { 
         "name": "Glass Joe",
         "rank": "3",
+        "rating": "1234"
+    },
+    { 
+        "name": "Craig Gregson",
+        "rank": "4",
+        "rating": "1231"
+    },
+    { 
+        "name": "Bobbert Rickert",
+        "rank": "5",
+        "rating": "1167"
+    },
+    { 
+        "name": "Steve From Accounting",
+        "rank": "6",
         "rating": "985"
     }
 ]
