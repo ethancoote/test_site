@@ -31,26 +31,37 @@
             </div>
         </div>
     </nav>
+    <div class="sidebar" style="width: 280px;">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
     <br>
     <h4 style="text-align: center; padding-top: 50px;"><b>Player Rank</b></h1>
+    
     <div class="form-outline" style="width: 500px; align-items: center; display: block; margin: 0 auto" data-mdb-input-init>
         <input v-model="search" id="search-form-1" class="form-control" placeholder="Search Players" @input="onChange"></input>
     </div>
-    <div class="container" style="width: 500px;">
-        <div class="table-responsive" style="height: 400px;">
-            <table class="table table-striped">
-                <thead class="table-dark">
-                    <tr>
-                        <th style="width: 70px;">Rank</th>
-                        <th style="width: 300px;">Name</th>
-                        <th>Rating</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body-0">
-                    <!-- Populated from data file -->
-                </tbody>
-            </table>
-        </div>
+    
+    <div class="container" style="display: flex; align-items: center;">
+        <form style="margin: 0 auto;">
+            <div class="table-responsive" style="height: 400px; width: 500px;">
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th style="width: 70px;">Rank</th>
+                            <th style="width: 300px;">Name</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body-0">
+                        <!-- Populated from data file -->
+                    </tbody>
+                </table>
+            </div>
+        </form>
+        
         
     </div>
     
