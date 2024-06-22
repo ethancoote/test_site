@@ -39,8 +39,18 @@
     </div>
     <br>
     <h4 style="text-align: center; padding-top: 50px;"><b>Player Rank</b></h1>
-    
+
     <div class="form-outline" style="width: 500px; align-items: center; display: block; margin: 0 auto" data-mdb-input-init>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="weightDropdown">
+                Weight Class
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="weightDropdown">
+                <li><a class="dropdown-item" href="#heavyweight">Heavyweight</a></li>
+                <li><a class="dropdown-item" href="#lightheavyweight">Light Heavyweight</a></li>
+                <li><a class="dropdown-item" href="#middleweight">Middleweight</a></li>
+            </ul>
+        </div>
         <input v-model="search" id="search-form-1" class="form-control" placeholder="Search Players" @input="onChange"></input>
     </div>
     
